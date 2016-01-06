@@ -42,6 +42,15 @@ public class ConversorTest {
 
     }
 
+    @Test
+    public void letraBSeTransformaEmDois() throws Exception {
+        char b = 'B';
+        Conversor conversor = new Conversor();
+        char convertido = conversor.converte(b);
+        assertThat(convertido, is('2'));
+
+    }
+
 
 
 
