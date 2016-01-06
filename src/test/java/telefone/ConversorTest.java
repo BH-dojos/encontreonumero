@@ -12,7 +12,6 @@ public class ConversorTest {
         Conversor conversor = new Conversor();
         char convertido = conversor.converte(um);
         assertThat(convertido, is(um));
-
     }
 
     @Test
@@ -21,7 +20,6 @@ public class ConversorTest {
         Conversor conversor = new Conversor();
         char convertido = conversor.converte(zero);
         assertThat(convertido, is(zero));
-
     }
 
     @Test
@@ -30,7 +28,6 @@ public class ConversorTest {
         Conversor conversor = new Conversor();
         char convertido = conversor.converte(hifen);
         assertThat(convertido, is(hifen));
-
     }
 
     @Test
@@ -39,7 +36,6 @@ public class ConversorTest {
         Conversor conversor = new Conversor();
         char convertido = conversor.converte(a);
         assertThat(convertido, is('2'));
-
     }
 
     @Test
@@ -48,12 +44,7 @@ public class ConversorTest {
         Conversor conversor = new Conversor();
         char convertido = conversor.converte(b);
         assertThat(convertido, is('2'));
-
     }
-
-
-
-
 
 
 }
