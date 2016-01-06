@@ -16,6 +16,15 @@ public class ConversorTest {
     }
 
     @Test
+    public void zeroNaoSeTransforma() throws Exception {
+        char zero = '0';
+        Conversor conversor = new Conversor();
+        char convertido = conversor.converte(zero);
+        assertThat(convertido, is(zero));
+
+    }
+
+    @Test
     public void hifenNaoSeTransforma() throws Exception {
         char hifen = '-';
         Conversor conversor = new Conversor();
