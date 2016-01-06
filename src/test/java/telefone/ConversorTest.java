@@ -33,6 +33,17 @@ public class ConversorTest {
 
     }
 
+    @Test
+    public void letraASeTransformaEmDois() throws Exception {
+        char a = 'A';
+        Conversor conversor = new Conversor();
+        char convertido = conversor.converte(a);
+        assertThat(convertido, is('2'));
+
+    }
+
+
+
 
 
 
